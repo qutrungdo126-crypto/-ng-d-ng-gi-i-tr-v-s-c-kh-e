@@ -36,7 +36,7 @@ videos = {
 
 st.title("🎧 Ứng dụng giải trí và sức khỏe")
 
-tab1, tab2, tab3, tab4,tab5 = st.tabs(["🎤 MV yêu thích", "📰 Đọc báo", "📄Kiểm tra sức khỏe","🔘Trình độ học sinh theo điểm","Toan Thang love Kim Ngan"])
+tab1, tab2, tab3, tab4 = st.tabs(["🎤 MV yêu thích", "📰 Đọc báo", "📄Kiểm tra sức khỏe","🔘Trình độ học sinh theo điểm",])
 
 with tab1:
     st.header(f"Các bài hát của {selected_artist} 🎵")
@@ -204,16 +204,4 @@ with tab4:
     else:
         st.info ("💔Bạn đã trượt môn")
         st.info (" bạn nên học thêm 1 kèm 1 cấp tốc.")
-with tab5:
-    st.title("Toan Thang thich Kim Ngan")
-    Kim_Ngan = st.number_input("Cham diem Kim Ngan (1 den 10(don't try 100))", min_value= 1, max_value=100)
-    if st.button("Thang co thik kim ngan ko"):
-        if Kim_Ngan == 100:
-            st.info("Toan Thang ban vao Kim Ngan r")
-            st.info("Kim ngan co bau r")
-        if Kim_Ngan >= 8 and Kim_Ngan <=10:
-            st.info("Toan Thang lam ck Kim Ngan roi")
-        if Kim_Ngan >=6 and Kim_Ngan <8:
-            st.info("Toan Thang het yeu Kim Ngan")
-        if Kim_Ngan <=5:
-            st.info("Toan Thang chia tay Kim Ngan roi")
+
