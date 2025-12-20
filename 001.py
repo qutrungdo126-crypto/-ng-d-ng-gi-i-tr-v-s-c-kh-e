@@ -1,4 +1,5 @@
 import streamlit as st
+import random
 from sklearn.linear_model import LinearRegression
 import feedparser
 
@@ -36,7 +37,7 @@ videos = {
 
 st.title("🎧 Ứng dụng giải trí và sức khỏe")
 
-tab1, tab2, tab3, tab4 = st.tabs(["🎤 MV yêu thích", "📰 Đọc báo", "📄Kiểm tra sức khỏe","🔘Trình độ học sinh theo điểm",])
+tab1, tab2, tab3, tab4,tab5 = st.tabs(["🎤 MV yêu thích", "📰 Đọc báo", "📄Kiểm tra sức khỏe","🔘Trình độ học sinh theo điểm","🎮Game"])
 
 with tab1:
     st.header(f"Các bài hát của {selected_artist} 🎵")
@@ -204,4 +205,26 @@ with tab4:
     else:
         st.info ("💔Bạn đã trượt môn")
         st.info (" bạn nên học thêm 1 kèm 1 cấp tốc.")
+with tab5:
+    tabA, tabB = st.tabs(["🎮 Game đoán số", "🎮 Game tung xúc sắc"])
 
+    with tabA:
+        st.header("🎯 Game đoán số bí mật từ 1 - 100")
+
+        if "secret" not in st.session_state:
+            st.session_state.secret = random.randint(1, 100)
+            st.session_state.tries = 0
+
+        guess = st.number_input("Nhập số dự đoán 1 - 100",min_value=1,max_value=100,step=1)
+        if st.button("🎮Đoán !!!!!"):
+            st.session_state.tries += 1
+            if guess < st.session_state.secret:
+                    st.warning("😕 Số bí mật lớn hơn")
+            elif guess > st.session_state.secret:
+                    st.warning("😕 Số bí mật nhỏ hơn")
+            else:
+                st.success(
+                f"🎉 Chính xác! Bạn đoán đúng sau {st.session_state.tries} lần.")
+        if st.button("🎮Chơi lại"):
+                st.session_state.secret = random.randint(1, 100)
+                st.session_state.tries = 0
