@@ -282,36 +282,24 @@ with tab5:
 
         puzzles = [
         {
-                "image": "https://cdn.lazi.vn/storage/uploads/dhbc/1469120972_tra-hoi.jpg",
-                "answer": "tra hỏi"
+            "image": "https://cdn.lazi.vn/storage/uploads/dhbc/1469120972_tra-hoi.jpg",
+            "answer": "tra hỏi"
         },
         {
-                "image": "https://cdn.lazi.vn/storage/uploads/dhbc/1469120797_khoa-so.jpg",
-                "answer": "khóa sổ"
+            "image": "https://cdn.lazi.vn/storage/uploads/dhbc/1469120797_khoa-so.jpg",
+            "answer": "khóa sổ"
         },
         {
-                "image": "https://cdn.lazi.vn/storage/uploads/dhbc/1469120784_kien-truc-su.jpg",
-                "answer": "kiến trúc sư"
-        },
-        {
-                "image": "https://cdn.lazi.vn/storage/uploads/dhbc/1468933376_thong-so.jpg",
-                "answer": "thông số"
+            "image": "https://cdn.lazi.vn/storage/uploads/dhbc/1469120784_kien-truc-su.jpg",
+            "answer": "kiến trúc sư"
         },
         {
             "image": "https://cdn.lazi.vn/storage/uploads/dhbc/1468933376_thong-so.jpg",
             "answer": "thông số"
         },
         {
-            "image": "https://cdn.lazi.vn/storage/uploads/dhbc/1468932212_thua-tuong.jpg",
-            "answer": "thua tướng"
-        },
-        {
             "image": "https://cdn.lazi.vn/storage/uploads/dhbc/1468933353_nhac-thinh-phong.jpg",
             "answer": "nhạc thính phòng"
-        },
-        {
-            "image": "https://cdn.lazi.vn/storage/uploads/dhbc/1468933365_sau-sac.jpg",
-            "answer": "sâu sắc"
         },
         {
             "image": "https://cdn.lazi.vn/storage/uploads/dhbc/1468933365_sau-sac.jpg",
