@@ -379,7 +379,7 @@ with tab5:
     with TaBE:
         st.title("🎲 Quay Số May Mắn")
         # Khởi tạo dữ liệu
-        if "prizes" not in st.session_state:
+        if "new_prizes" not in st.session_state:
             st.session_state.new_prizes = []
         if "weights" not in st.session_state:
             st.session_state.weights = []
@@ -442,4 +442,3 @@ with tab5:
                 st.success(f"Chúc mừng bạn đã trúng {result}")
             else:
                 st.warning("⚠ Chưa có phần thưởng")
-
